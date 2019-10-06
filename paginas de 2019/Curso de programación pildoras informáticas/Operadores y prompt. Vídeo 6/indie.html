@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Prompt</title>
+		
+		<style type="text/css">
+			body{
+				background-color: #2ADC78;
+				font-size: 150%;
+
+			}
+			header{
+				background-color: #22BD66;
+				color: white;
+			}
+			button{
+				background-color: #4CAF50; /* Green */
+	  			border: 1px solid black;
+	  			color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				
+			}
+			#boton{
+				margin right: :50%;
+				background-color: #11D969
+			}
+			#boon{
+				background: red
+			}
+			img{
+				width: 100%;
+				margin: auto;
+			}
+			#arrays{
+				background-color: #ABEF34;
+				font-family: cursive;
+				padding-bottom: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Prompt: Uso </h2>
+			<p>Es una funcion que te pide una respuesta al mismo estilo<br>
+			que un alert.</p> 
+			<button id="boton">Saludar</button>
+			<input type="button" name="" id="boon">
+		</header>
+		
+		<script type="text/javascript">
+			var b = document.getElementById("boton");
+			var c = document.getElementById("boon");
+
+			b.addEventListener("click", saludo);
+			c.addEventListener("click", bomb);
+
+			i  = 1;
+
+			function saludo(){
+				var i = prompt("Como te llammas");
+				alert("Hola "+ i + " como estas (^_^)");
+				console.log("botton clicked: " + i);
+				i = i+1;}
+
+			function bomb(){
+				document.write("<h1>Nunca presiones un boton rojo!!</h1>");
+				document.write("<img src='laptop.gif'>");
+				document.write("<img src='link.gif'>");
+			}
+		</script>
+		<article>
+			<br>AAAA
+			<br>Que chingada no sirve el programa como yo quería T_T
+		</article>
+		<article id="arrays">
+			<h2>Clase de arrays o matrices</h2>
+			<p>Esto es la continuacion de la clase de matrices, es la clase 7 <br>
+			   Lo que haré es escribir un script donde crearé una variable "articulos"<br>
+			   con ["0","1"] allí pondre algunos elementos.
+			</p>
+			<script type="text/javascript">
+
+				var articulos = ["Camisa", "Bolso", "Celular", "Gorro"];
+				
+				document.write("El primer elemento es: " + articulos[0]);
+				document.write("<br>El ultimo es: " + articulos[articulos.length-1]);
+				articulos.unshift("Jacket");
+				document.write("<br><br>Utilizando la función <strong>articulos.unshift</strong> se agrega un nuevo elemento al inicio.");
+				document.write("<br>Ahora el primer elemento es: "+ articulos[0]);
+				document.write("<br><br>Contrariamente la función <strong>articulos.push</strong>  agrega un nuevo elemento al final.");
+				articulos.push("Laptop");
+				document.write("<br>Ahora el ultimo elemento es: "+articulos[articulos.length-1]);
+
+
+			</script>
+			<p>
+				Para preguntar si se quiere agregar un elemento se usa <strong>articulos.push(prompt("Nuevo elemento"));</strong><br> se entiende no? Luego pones el document.write("");<br><br>Si quieres poner todos los elementos de un array debes usar un ciclo for.<br><br> Para borrar el primer elemento de un array se utiliza el <strong>.shift</strong> y para borrar el ultimo se utiliza <strong>.pop</strong>
+			</p>
+			<p>
+				<h3>Comentarios utiles de Youtube</h3>
+				Con el metodo <strong>splice</strong> podemos borrar cualquier elemento o elementos del array =
+				articulos.splice(1,1);  se indica posicion inicial y final (1,1), en este caso solo le indico que me elimine el elemento 1 de mi array, si quiero borrar del 1 al 3 que sean continuos seria splice(1,3);
+			</p>
+		</article>
+	</body>
+	
+</html>

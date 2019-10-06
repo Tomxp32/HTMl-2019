@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+		<style type="text/css">
+			body{
+				background-color: #F6FFFE;
+				width: 70%;
+				font-size: 25px;
+				margin-left: 50px;
+				padding-top: 3%
+			}
+			header{
+				background-color: #FFD4D4
+			}
+			article p{
+				background-color: #D0FDDB;
+				padding: 8px;
+			}
+			.cmd{
+				background-color: #A7F7BA;
+				border: auto;
+				text-align: auto;
+				margin-left: 15px;
+			}
+		</style>
+		<title>
+			Curso de git por fantz web 2019
+		</title>
+	</head>
+	<body>
+		<section>
+			<article>
+				<header>
+					<h2>Que es git </h2>
+				</header>
+				<p>
+					¿Que es Git y para que sirve? - Segun Victor Robles Web<br><br>
+					Git es un <strong>sistema de control de versiones</strong>.
+
+					Un sistema de control de versiones nos va a servir para trabajar en equipo de una manera mucho más simple y optima cuando estamos desarrollando software.<br><br>
+
+					Con Git vamos a poder controlar todos los cambios que se hacen en nuestra aplicación y en nuestro código y vamos a tener control absoluto de todo lo que pasa en el código, pudiendo volver atrás en el tiempo, pudiendo abrir diferentes ramas de desarrollo, etc.
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>Que es github</h2>
+				</header>
+					<p>
+						GitHub es un sistema de gestión de proyectos y control de versiones de código, así como una plataforma de <strong>red social diseñada para desarrolladores.</strong> ¿Pero para qué se usa GitHub? Bueno, en general, permite trabajar en colaboración con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo.
+					</p>
+				
+			</article>
+			<article>
+				<header>
+					<h2>Pasos para usar git</h2>
+				</header>
+				<p>
+					Lo primero es tener una carpeta donde se almacenen los projectos, es decir que al menos contenga un html y un JS. <br><br> 
+					A esa carpeta le daremos un click derecho y seleccionamos <strong>Git bash here</strong> o abrimos <strong>CMD</strong> escribimos <strong>cd Desktop</strong> y entramos a la carpeta en caso de que esta esté en la pantalla principal.<br><br>
+					Luego escribimos el comando <strong>git init</strong>. Esto también se puede hacer desde la consola de comandos de git. <br><br>
+					Para ver los archivos con los que estamos trabajando usamos <strong>git status.</strong> Luego agregamos uno o varios archivos al <strong>statin area</strong> con el comando <strong>git add</strong>. Con eso los elementos de una carpeta serán agregados y se convertirán en la versión inicial de desarrollo. <br><br>
+					Para crear un punto de partida, es decir un snapshot se usa el comando <strong>git commit.</strong> Luego pide que configuremos email y nombre de usuario. Este registro hay que hacerlo antes de el comando <strong>git commit.</strong>
+					<br><br>
+					Una vez que registremos un commit va a abir un editor de codigo en el terminal llamado <strong>bin</strong> donde se nos va a pedir un nombre para este, para salir de este registro una vez puesto un nombre es presionar esc y escribir <strong>:wq</strong> <br><br>Luego podemos ver este registro con el comando <strong>git log</strong> donde se muestran los commits creados con varios datos como un id unico para cada commit llamado <strong>hash.</strong><br><br>
+					Si hay una carpeta o archivos que no se quieren tomar en cuenta para el git lo que hay que hacer es crear un archivo <strong>.gitignore</strong> abrirlo y nombrar alli los archivos o carpetas que no son relevantes. Luego de eso solo se agrega el .gitignore a git. <br><br>
+					Para que al hacer un snapshot no se abra el terminal, debe usarse el comando <strong>git commit -m "Comentario"</strong>
+					<br><br> Existe el comando <strong>git branch</strong> para ver las ramificaciones, al principio solo habra una <strong>master</strong> que será la original, para crear una nueva se usa git branch nueva_rama, y para cambiar de rama se usa git checkout nueva_rama
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>Comandos basicos</h2>
+				</header>
+				<p>
+					<br><span class="cmd"><strong >pwd</strong> =  Muestra tu locación actual <br><br></span>
+					<span class="cmd"><strong >ls</strong> = Muestra las carpetas y archivos disponibles <br><br></span>
+					<span class="cmd"><strong >git init</strong> = Inicia un nuevo proyecto <br><br></span>
+					<span class="cmd"><strong >git status</strong> = Para ver el estado de nuestros archivos <br><br></span>
+					<span class="cmd"><strong >git commit</strong> = Para crear un primer punto de control de nuestro código <br><br></span>
+					<span class="cmd"><strong >git config --global user.email</strong> = Para configurar el email de este usuario <br><br></span>
+					<span class="cmd"><strong >git config --global user.name</strong> = Para configurar el nombre de este usuario <br><br></span>
+					<span class="cmd"><strong >git log</strong> = Para ver los commits creados <br><br></span>
+					<span class="cmd"><strong >git checkout --</strong> = Para revertir los cambios de los archivos<br><br></span>
+					<span class="cmd"><strong >git diff</strong> = Para ver las diferencias hechas en los archivos <br><br></span>
+					<span class="cmd"><strong >git branch</strong> = Muestra las ramas que tiene un proyecto o crea una nueva <br><br></span>
+					<span class="cmd"><strong >git add .</strong> = Agrega todos los archivos no incluidos <br><br></span>
+				</p>
+			</article>
+		</section>
+	</body>
+</html>

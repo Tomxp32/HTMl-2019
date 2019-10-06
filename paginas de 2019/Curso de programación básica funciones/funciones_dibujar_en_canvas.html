@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>
+			Clase 13 funciones
+		</title>
+		<style type="text/css">
+			.can{
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Dibujar en canvas con una función</h2>
+		</header>
+		<p>Freddy explica como con una funcion se ahorra codigo y como se utiliza una función</p>
+		<canvas class="can" width = "300" height = "300 " id="lienzo"></canvas>
+		<script type="text/javascript">
+			var cnvs = document.getElementById("lienzo");
+			var dibujar = cnvs.getContext("2d");
+
+			function dibujarLinea(color, xi, xf, yi, yf){
+				dibujar.beginPath();
+				dibujar.strokeStyle = color;
+				dibujar.moveTo(xi, xf);
+				dibujar.lineTo(yi, yf);
+				dibujar.stroke();
+				dibujar.closePath();
+			}
+
+			dibujarLinea("blue", 10, 300, 220, 10);
+		</script>
+	</body>
+</html>
